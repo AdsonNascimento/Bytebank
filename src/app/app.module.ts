@@ -1,4 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
+import { HttpClientModule } from '@angular/common/http';
 
 //language of currency
 import { DEFAULT_CURRENCY_CODE, NgModule } from '@angular/core';
@@ -23,7 +24,8 @@ registerLocaleData(localePt, 'pt');
   ],
   imports: [
     BrowserModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [
     {provide: LOCALE_ID, useValue: 'pt' },
