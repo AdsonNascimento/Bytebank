@@ -28,7 +28,7 @@ export class TransferenciaService {
     return this.httpClient.post<Transferencia>(this.url, transferencia)
   }
 
-  private lapidar (transferencia) {
-    transferencia.data = new Date();
+  private lapidar (transferencia: Transferencia) {
+    transferencias.data = new Date();
   }
 }
